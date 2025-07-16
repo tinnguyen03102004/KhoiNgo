@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1A202C">
     <title>Thu Mua Xe Ô Tô Lướt Giá Cao - Ngô Khôi</title>
     <meta name="description" content="Thu mua xe ô tô lướt giá cao, uy tín tại TP.HCM">
     
@@ -104,8 +105,9 @@
                 <a href="#brands" class="text-light-gray hover:text-teal transition-colors duration-300">Thương Hiệu</a>
                 <a href="#footer" class="text-light-gray hover:text-teal transition-colors duration-300">Liên Hệ</a>
             </nav>
-             <button id="mobile-menu-button" class="md:hidden text-light-gray focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden text-light-gray focus:outline-none">
+                <svg id="mobile-menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg id="mobile-menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
         <!-- Mobile Menu -->
@@ -120,10 +122,10 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <section id="hero" class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center md:bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <div class="hero-overlay"></div>
-            <div class="relative z-10 p-6">
-                <h1 class="font-playfair text-5xl md:text-7xl font-bold text-white leading-tight">
+            <div class="relative z-10 p-4 sm:p-6">
+                <h1 class="font-playfair text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
                     Thu Mua Xe Ô Tô Lướt Giá Cao
                 </h1>
                 <p class="font-inter text-xl md:text-2xl text-teal mt-4 font-medium">
@@ -243,9 +245,9 @@
                 </p>
             </div>
             <div class="mt-16 relative">
-                <div class="flex space-x-8 overflow-x-auto pb-4 horizontal-scroll-container pl-6 md:pl-0">
+                <div class="flex space-x-8 overflow-x-auto pb-4 horizontal-scroll-container pl-6 md:pl-0 snap-x snap-mandatory">
                     <!-- Card 1 -->
-                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden snap-start">
                         <img src="https://images.unsplash.com/photo-1616422285623-13ff01621935?q=80&w=2070&auto=format&fit=crop" alt="Porsche 911" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-inter text-xl font-bold text-white">Porsche 911 Carrera</h3>
@@ -254,7 +256,7 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden snap-start">
                         <img src="https://images.unsplash.com/photo-1617083272284-b53a81b37c05?q=80&w=2070&auto=format&fit=crop" alt="Mercedes-Benz C300" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-inter text-xl font-bold text-white">Mercedes-Benz C300</h3>
@@ -263,7 +265,7 @@
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden snap-start">
                         <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1974&auto=format&fit=crop" alt="BMW X5" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-inter text-xl font-bold text-white">BMW X5</h3>
@@ -272,7 +274,7 @@
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden snap-start">
                         <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1964&auto=format&fit=crop" alt="Audi Q8" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-inter text-xl font-bold text-white">Audi Q8</h3>
@@ -281,7 +283,7 @@
                         </div>
                     </div>
                      <!-- Card 5 -->
-                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden mr-6 md:mr-0">
+                    <div class="flex-shrink-0 w-80 md:w-96 bg-dark-slate-light rounded-lg shadow-lg overflow-hidden mr-6 md:mr-0 snap-start">
                         <img src="https://images.unsplash.com/photo-1614026480421-a892021c43a2?q=80&w=2070&auto=format&fit=crop" alt="Lexus ES 350" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-inter text-xl font-bold text-white">Lexus ES 350</h3>
@@ -350,15 +352,21 @@
         // JavaScript cho menu mobile
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOpenIcon = document.getElementById('mobile-menu-open');
+        const mobileMenuCloseIcon = document.getElementById('mobile-menu-close');
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            mobileMenuOpenIcon.classList.toggle('hidden');
+            mobileMenuCloseIcon.classList.toggle('hidden');
         });
         
         // Đóng menu mobile khi click vào một link
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                mobileMenuOpenIcon.classList.remove('hidden');
+                mobileMenuCloseIcon.classList.add('hidden');
             });
         });
 
