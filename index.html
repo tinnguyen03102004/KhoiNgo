@@ -189,7 +189,7 @@
                         Chỉ cần để lại thông tin, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất với một báo giá chuyên nghiệp và cạnh tranh.
                     </p>
                 </div>
-                <form class="max-w-3xl mx-auto mt-12 space-y-6">
+                <form id="valuation-form" class="max-w-3xl mx-auto mt-12 space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label for="brand" class="block mb-2 font-inter text-sm font-medium text-light-gray">Hãng xe</label>
@@ -365,7 +365,7 @@
         document.getElementById('year').textContent = new Date().getFullYear();
 
         // Ngăn form submit (vì đây là web tĩnh)
-        document.querySelector('form').addEventListener('submit', function(e) {
+        document.getElementById('valuation-form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Cảm ơn bạn đã gửi thông tin! Chúng tôi sẽ liên hệ lại sớm nhất.');
         });
