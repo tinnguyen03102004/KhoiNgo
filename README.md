@@ -25,4 +25,4 @@ $ xdg-open index.html  # or open index.html through your file manager
 If you have any questions about the project or the service, reach out via:
 - **Phone:** `0908 569 309`
 - **Email:** [ngoanhkhoi0909@gmail.com](mailto:ngoanhkhoi0909@gmail.com)
-- **Address:** 6e Phan Bội Châu, Bình Thạnh, TP HCM
+- **Address:** Bình Thạnh, TP HCM
