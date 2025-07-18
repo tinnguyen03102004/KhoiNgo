@@ -101,7 +101,7 @@
             width: 48px;
             height: 48px;
             object-fit: contain;
-            border-radius: 50%;
+            border-radius: 12px;
             box-shadow: 0 2px 8px 0 rgba(0,0,0,.14);
             background: transparent;
         }
@@ -114,6 +114,36 @@
                 right: 16px;
             }
             .zalo-float img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+        /* Nút Facebook nổi nằm phía trên Zalo */
+        .fb-float {
+            position: fixed;
+            bottom: 88px;
+            right: 24px;
+            z-index: 50;
+            transition: transform 0.2s cubic-bezier(.4,0,.2,1);
+        }
+        .fb-float img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,.14);
+            background: transparent;
+        }
+        .fb-float:hover {
+            transform: scale(1.08);
+        }
+        @media (max-width: 640px) {
+            .fb-float {
+                bottom: 74px;
+                right: 16px;
+            }
+            .fb-float img {
                 width: 42px;
                 height: 42px;
             }
@@ -477,6 +507,11 @@
             alert('Cảm ơn bạn đã gửi thông tin! Chúng tôi sẽ liên hệ lại sớm nhất.');
         });
     </script>
+
+    <!-- Nút Facebook -->
+    <a href="https://www.facebook.com/profile.php?id=61574844647168" class="fb-float" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
 
     <!-- Nút Zalo kiểu NamaHealing -->
     <a href="https://zalo.me/0908569309" class="zalo-float" aria-label="Chat Zalo">
